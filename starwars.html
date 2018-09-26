@@ -1,0 +1,110 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <title>28_08</title>
+    <meta charset="UTF-8">
+
+
+<style>
+    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+    @keyframes star{
+        from{
+            top:100%;
+        }
+        to{
+            top:-470%
+        }
+    }
+    *{ 
+        padding: 0;
+        margin: 0; 
+    }
+
+    html,body{
+        background-color: black;
+        font-size: 82px;
+        font-family: SourceSansPro;
+        color: #ffd700;
+        margin:0;
+        padding: 0;
+        
+    }
+    
+    #gran{
+        transform: perspective(200px) rotateX(25deg);
+        transform-origin: 50% 100%;
+        height: 800px;
+        width: 990px;
+        overflow: hidden;
+        margin-top: 0;
+        font-weight:bold;
+        text-align: justify;
+        position:absolute;
+        top: -310px;
+        left:13.5%;
+        
+    }
+    #cont{
+        animation: star 40s linear ;
+        position: absolute;
+        top:100%
+    }
+    #nome{
+        margin-top:2%;
+        width: 990px;
+    }
+     #carta
+  {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background-color: orange;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    font-size: 18px;
+  }
+  #menu
+  {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background-color: orange;
+    font-size: 18px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+</style>
+<audio preload="auto">
+    <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
+    <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
+  </audio>
+    <div id="gran">
+        <div id="cont">
+            <p>O Grêmio Estudantil humildimente destina este chamado ao...</p>
+            <img id="nome" src="https://preview.ibb.co/iKpgrp/logo.png" alt="logo" border="0">
+            <p id="textao">É um período de guerra escolar. Os ataques de provas, trabalhos
+             e notas baixas acabaram de nos destruir. A munição está esgotada,  então como
+             comemoração à trégua, o Grêmio Estudantil IFRS - Campus Canoas promove um 
+             encontro amistoso entre diferentes impérios, promovendo nossa recuperação 
+             para as próximas batalhas. Porém, como Jedis ainda em treinamento, precisamos
+             de um mestre responsável para nos guiar ao caminho da Força durante a tarde 
+             ensolarada deste sábado. O encontro reunirá diversos proeminentes Jedis em diversos
+             tipos de atividades e contará com o comparecimento de seus responsáveis. A presença 
+             do senhor, nosso Mestre, será agraciada com extrema glória.E como símbolo do nosso profundo 
+             respeito e admiração, um Xis Canoense o será ofertado. O Grêmio Estudantil
+             pede sua ajuda para salvar nossos Jedis, eliminar todo 
+             o estresse e trazer paz à galaxia. . . .</p>
+            
+        </div>
+    
+    </div>
+    <a href="texto.html"><div id="carta">Carta</div></a>
+  <a href="index.html"><div id="menu">Menu</div></a>
+</body>
